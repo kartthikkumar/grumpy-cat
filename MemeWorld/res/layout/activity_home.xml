@@ -4,11 +4,31 @@
     android:layout_height="match_parent"
     tools:context=".HomeActivity" >
 
-    <TextView
+    <Button
+        android:id="@+id/gallery_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_centerVertical="true"
-        android:text="@string/hello_world" />
+        android:layout_marginTop="64dp"
+        android:text="From Gallery" />
+
+    <Button
+        android:id="@+id/list_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="19dp"
+        android:text="From List" />
+
+    <Button
+        android:id="@+id/mymemes_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/button2"
+        android:layout_below="@+id/button2"
+        android:layout_marginTop="33dp"
+        android:text="My Memes" />
 
 </RelativeLayout>
