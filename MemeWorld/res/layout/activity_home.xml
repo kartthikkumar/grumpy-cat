@@ -2,33 +2,49 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#FFFCdC"
     tools:context=".HomeActivity" >
 
-    <Button
-        android:id="@+id/gallery_button"
+    <EditText
+        android:id="@+id/usernameEdit"
+        android:hint="Username"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="64dp"
-        android:text="From Gallery" />
+        android:layout_marginTop="93dp"
+        android:ems="10" >
 
-    <Button
-        android:id="@+id/list_button"
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/passwordEdit"
+        android:hint="Username"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/button1"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="19dp"
-        android:text="From List" />
+        android:layout_alignLeft="@+id/usernameEdit"
+        android:layout_below="@+id/usernameEdit"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:inputType="textPassword" />
 
     <Button
-        android:id="@+id/mymemes_button"
+        android:id="@+id/loginButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/button2"
-        android:layout_below="@+id/button2"
-        android:layout_marginTop="33dp"
-        android:text="My Memes" />
+        android:layout_alignLeft="@+id/passwordEdit"
+        android:layout_below="@+id/passwordEdit"
+        android:layout_marginTop="24dp"
+        android:text="Login" />
+
+    <Button
+        android:id="@+id/signupButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/loginButton"
+        android:layout_alignBottom="@+id/loginButton"
+        android:layout_alignRight="@+id/usernameEdit"
+        android:text="Signup" />
 
 </RelativeLayout>
